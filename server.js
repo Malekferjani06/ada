@@ -24,3 +24,13 @@ app.listen(port, (error) => {
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname+"/Home.html"))
 })
+
+
+app.get("/contact",(req,res)=>{
+  res.sendFile(path.join(__dirname+"/contact us .html"))
+})
+
+
+app.get("/service",(req,res)=>{
+  res.sendFile(path.join(__dirname+"/Our services.html"))
+})
